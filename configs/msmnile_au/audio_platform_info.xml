@@ -27,7 +27,7 @@
 <!-- IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.                          -->
 <!--                                                                        -->
 <!-- Changes from Qualcomm Innovation Center are provided under the following license: -->
-<!-- Copyright (c) 2023 Qualcomm Innovation Center, Inc. All rights reserved. -->
+<!-- Copyright (c) 2023-2024 Qualcomm Innovation Center, Inc. All rights reserved. -->
 <!-- SPDX-License-Identifier: BSD-3-Clause-Clear                            -->
 
 <audio_platform_info>
@@ -57,6 +57,9 @@
         <device name="SND_DEVICE_IN_BUS_PAX" acdb_id="47"/>
         <device name="SND_DEVICE_IN_BUS_RSE" acdb_id="47"/>
         <device name="SND_DEVICE_IN_HEADSET_MIC" acdb_id="47"/>
+        <device name="SND_DEVICE_IN_UNPROCESSED_MIC" acdb_id="137"/>
+        <device name="SND_DEVICE_IN_VOICE_REC_MIC" acdb_id="138"/>
+        <device name="SND_DEVICE_IN_SPEAKER_MIC_AEC_AUTO" acdb_id="139"/>
         <device name="SND_DEVICE_IN_VOICE_HEADSET_MIC" acdb_id="95"/>
         <device name="SND_DEVICE_IN_VOICE_SPEAKER_MIC" acdb_id="95"/>
         <device name="SND_DEVICE_IN_VOICE_SPEAKER_MIC_HFP" acdb_id="95"/>
@@ -170,7 +173,7 @@
         <param key="mono_speaker" value="right"/>
         <!-- In the below value string, first parameter indicates size -->
         <!-- followed by perf lock options                             -->
-        <param key="perf_lock_opts" value="4, 0x40400000, 0x1, 0x40C00000, 0x1"/>
+        <param key="perf_lock_opts" value="2, 0x40400000, 0x1"/>
         <param key="native_audio_mode" value="src"/>
         <param key="input_mic_max_count" value="4"/>
         <param key="true_32_bit" value="true"/>
@@ -209,6 +212,9 @@
         <device name="SND_DEVICE_IN_HANDSET_MIC" interface="TERT_TDM_TX_0"/>
         <device name="SND_DEVICE_IN_SPEAKER_MIC" interface="TERT_TDM_TX_0"/>
         <device name="SND_DEVICE_IN_HEADSET_MIC" interface="TERT_TDM_TX_0"/>
+        <device name="SND_DEVICE_IN_UNPROCESSED_MIC" interface="TERT_TDM_TX_0"/>
+        <device name="SND_DEVICE_IN_VOICE_REC_MIC" interface="TERT_TDM_TX_0"/>
+        <device name="SND_DEVICE_IN_SPEAKER_MIC_AEC_AUTO" interface="TERT_TDM_TX_0"/>
         <device name="SND_DEVICE_IN_BUS" interface="TERT_TDM_TX_0"/>
         <device name="SND_DEVICE_IN_BUS_PAX" interface="QUAT_TDM_TX_0"/>
         <device name="SND_DEVICE_IN_BUS_RSE" interface="QUIN_TDM_TX_0"/>
